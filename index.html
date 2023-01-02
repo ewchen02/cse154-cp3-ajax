@@ -1,0 +1,46 @@
+<!--
+  Nate Chen
+  2/11/2022
+  Section AE
+
+  HTML page for my CP3 submission. Contains a text input field that takes a Pokémon name or
+  National Dex number, and prints the type(s) of the Pokémon when the button is clicked.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>CP3</title>
+  </head>
+  <body>
+  <section>
+    <h1>Pokémon Type Checker</h1>
+    <p>
+      Enter a Pokémon name or its National Pokédex number to see its type(s)!
+      <br>
+      Only Pokémon up to the Sword &amp; Shield Expansion Pass are supported
+      (Pokédex numbers 1-898).
+    </p>
+    <form>
+      <label for="pokemon">Pokémon Name or Pokédex number:</label>
+      <br>
+      <input type="text" id="pokemon">
+    </form>
+    <button type="button">Get Types</button>
+  </section>
+  <section id="types">
+    <p>Pokémon: <span id="pokemon-name"></span></p>
+    <p id="type-1">Primary type:</p>
+    <p id="type-2">Secondary type:</p>
+  </section>
+
+  <footer>
+    <p>
+      Data retrieved from <a href="https://pokeapi.co/">PokeAPI</a>.
+    </p>
+  </footer>
+  </body>
+</html>

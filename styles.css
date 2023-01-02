@@ -1,0 +1,17 @@
+/*
+  Nate Chen
+  2/11/2022
+  Section AE
+
+  CSS stylesheet for my CP3 submission. Only styles the background and the footer.
+*/
+
+body {
+  background-color: beige;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  font-size: 12px;
+}
